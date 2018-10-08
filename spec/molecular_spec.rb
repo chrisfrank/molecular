@@ -1,18 +1,9 @@
 require 'erb'
 require 'spec_helper'
 
-module UI
-  Button = Chemical.new(
-    color: 'white',
-    bg: 'bg-blue',
-    base: 'br3',
-    falsy: nil
-  )
-end
-
-RSpec.describe Chemical do
+RSpec.describe Molecular do
   it "has a version number" do
-    expect(Chemical::VERSION).not_to be nil
+    expect(Molecular::VERSION).not_to be nil
   end
 
   it 'renders the default classes' do
@@ -34,5 +25,14 @@ RSpec.describe Chemical do
       expect(res).not_to include "bg-blue"
       expect(res).to include "bg-red"
     end
+  end
+
+  it 'returns a new object on self.call' do
+    first = UI::Button
+    second = UI::Button.call(bg: 'bg-blue')
+    third = UI::Button
+
+    expect(first).to be(third)
+    expect(first).not_to be(second)
   end
 end

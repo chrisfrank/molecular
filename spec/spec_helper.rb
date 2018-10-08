@@ -1,5 +1,14 @@
 require "bundler/setup"
-require "chemical"
+require "molecular"
+
+module UI
+  Button = Molecular::Compound.new(
+    color: 'white',
+    bg: 'bg-blue',
+    base: 'br3',
+    falsy: nil
+  )
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

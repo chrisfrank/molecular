@@ -1,16 +1,15 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "chemical/version"
+require "molecular/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "chemical"
-  spec.version       = Chemical::VERSION
+  spec.name          = "molecular"
+  spec.version       = Molecular::VERSION
   spec.authors       = ["Chris Frank"]
   spec.email         = ["chris.frank@future.com"]
 
   spec.summary       = %q{Build styled HTML elements by composing classes from your favorite Atomic CSS framework}
-  spec.homepage      = "https://www.github.com/chrisfrank/chemicals"
+  spec.homepage      = "https://www.github.com/chrisfrank/molecular"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -30,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "benchmark-ips", "~> 2.7"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"

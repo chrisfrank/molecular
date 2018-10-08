@@ -1,3 +1,3 @@
-module Chemical
+module Molecular
   VERSION = "0.1.0"
 end
