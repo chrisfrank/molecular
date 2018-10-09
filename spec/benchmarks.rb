@@ -21,9 +21,9 @@ Benchmark.ips do |bm|
 
   bm.report('raw strings') do
     %(
-      <button class="white bg-red br3">Click Here</button>
-      <button class="white bg-gold br3">No, here</button>
-      <button class="black bg-blue br3}">or here</button>
+      <button class="<%= 'white bg-red br3' %>">Click Here</button>
+      <button class="<%= 'white bg-gold br3' %>">No, here</button>
+      <button class="<%= 'black bg-blue br3' %>">or here</button>
     )
   end
 end

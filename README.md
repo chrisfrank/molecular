@@ -1,15 +1,35 @@
-# Chemical
+# Molecular
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/chemical`. To experiment with that code, run `bin/console` for an interactive prompt.
+Abstract away complex Atomic CSS class strings, in any Ruby app:
 
-TODO: Delete this and the text above, and describe your gem
+Go from this:
+```html
+<a class="f6 link dim ph3 pv2 mb2 dib white bg-black" href="#0">
+  A black button
+</a>
+
+<a class="f6 link dim ph3 pv2 mb2 dib white bg-black" href="#0">
+  A red button
+</a>
+```
+
+To this:
+```erb
+<a class="<%= UI::Button %>">
+  A black button
+</a>
+
+<a class="<%= UI::Button.(bg: 'bg-red') %>">
+  A red button
+</a>
+```
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'chemical'
+gem 'molecular'
 ```
 
 And then execute:
@@ -18,7 +38,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install chemical
+    $ gem install molecular
 
 ## Usage
 
@@ -32,4 +52,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/chrisfrank/chemical.
+Bug reports and pull requests are welcome on GitHub at https://github.com/chrisfrank/nanostyled.

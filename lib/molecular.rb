@@ -1,4 +1,4 @@
-require "molecular/version"
+require_relative 'molecular/version'
 
 module Molecular
   def self.compound(atoms)
