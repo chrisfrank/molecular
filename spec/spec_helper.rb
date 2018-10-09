@@ -1,8 +1,9 @@
 require "bundler/setup"
 require "molecular"
+require "rspec"
 
 module UI
-  Button = Molecular::Compound.new(
+  Button = Molecular.compound(
     color: 'white',
     bg: 'bg-blue',
     base: 'br3',

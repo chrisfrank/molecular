@@ -1,6 +1,10 @@
 require "molecular/version"
 
 module Molecular
+  def self.compound(atoms)
+    Compound.new(atoms)
+  end
+
   class Compound
     def initialize(atoms)
       @atoms = atoms
