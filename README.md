@@ -1,6 +1,6 @@
 # Molecular
 
-Abstract away complex Atomic CSS class strings, in any Ruby app:
+Build reusable, tweakable UI elements out of atomic-CSS classes, in any Ruby app.
 
 Go from this:
 ```html
