@@ -1,13 +1,10 @@
 # Molecular
 
-The promise of atomic CSS is that you can build complex styles without writing
-any new CSS, just by chaining tiny CSS utility classes in markup. Atomic CSS is
-quick to build with and scales well, but it makes your markup awfully verbose.
+`Molecular` abstracts long atomic CSS strings into reusable, tweakable Ruby
+objects. You get all the benefits of working with atomic CSS, without the ugly
+markup and verbose API.
 
-`Molecular` abstracts your complex CSS class strings into objects that clean up
-your views and expose a convenient API for making visual tweaks.
-
-Transform your markup from this...
+Transform your app's views from this...
 
 ```html
 <a class="f6 link dim ph3 pv2 mb2 dib white bg-black" href="#0">
@@ -40,6 +37,7 @@ Transform your markup from this...
   * [Roda](#roda)
 * [Development](#development)
 * [Contributing](#contributing)
+* [Related Projects](#related-projects)
 
 ---
 
@@ -61,12 +59,11 @@ Or install it yourself as:
 
 ## Usage (Generic)
 
-You can use Molecular with any CSS framework, in any Ruby app.
+You can use Molecular with any CSS framework, in any Ruby app. In broad strokes,
+here's how to style a button with Molecular, using example CSS classes from
+[tachyons.css][button].
 
-Let's quickly style a button, using [one from tachyons.css][button] as a
-guide.
-
-### Step 1: Create a Compound
+### Step 1: Create a Molecular::Compound
 
 Somewhere in your app:
 
@@ -310,6 +307,11 @@ git commits and tags, and push the `.gem` file to
 
 Bug reports and pull requests are welcome on GitHub at
 https://github.com/chrisfrank/molecular.
+
+## Related Projects
+
+* [Tachyons.css][tachyons]
+* [Nanostyled (JS)](https://github.com/chrisfrank/nanostyled)
 
 [tachyons]: http://tachyons.io/
 [button]: http://tachyons.io/components/buttons/basic/index.html
