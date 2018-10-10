@@ -123,7 +123,7 @@ Button = Molecular.compound(
   size: 'f6',
   hover: 'link dim',
   padding: 'ph3 pv2',
-  margin: 'mb2'
+  margin: 'mb2',
   display: 'dib',
 )
 ```
@@ -166,10 +166,10 @@ module StyleHelper
     Molecular.compound(
       color: 'white',
       bg: 'black',
-      font_size: 'f6',
+      size: 'f6',
       hover: 'link dim',
       padding: 'ph3 pv2',
-      margin: 'mb2'
+      margin: 'mb2',
       display: 'dib',
     )
   end
@@ -202,10 +202,10 @@ module StyleHelper
     Molecular.compound(
       color: 'white',
       bg: 'black',
-      font_size: 'f6',
+      size: 'f6',
       hover: 'link dim',
       padding: 'ph3 pv2',
-      margin: 'mb2'
+      margin: 'mb2',
       display: 'dib',
     )
   end
@@ -254,10 +254,10 @@ module StyleHelper
     Molecular.compound(
       color: 'white',
       bg: 'black',
-      font_size: 'f6',
+      size: 'f6',
       hover: 'link dim',
       padding: 'ph3 pv2',
-      margin: 'mb2'
+      margin: 'mb2',
       display: 'dib',
     )
   end
