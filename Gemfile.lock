@@ -82,7 +82,7 @@ DEPENDENCIES
   rake (~> 10.0)
   reek (~> 5)
   rspec (~> 3.0)
-  rubocop (~> 0)
+  rubocop (~> 0.5)
 
 BUNDLED WITH
    1.16.5
