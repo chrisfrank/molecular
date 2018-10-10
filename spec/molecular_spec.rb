@@ -1,5 +1,5 @@
-require 'erb'
 require 'spec_helper'
+require 'erb'
 
 RSpec.describe Molecular do
   it 'has a version number' do

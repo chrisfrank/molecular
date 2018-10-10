@@ -1,7 +1,9 @@
 require_relative 'molecular/version'
+require 'digest'
 
 # Build reusable, tweakable UI elements out of atomic-CSS classes
 module Molecular
+  module_function
   # @example
   #   Button = Compound.new(bg: 'bg-blue', color: 'white')
   #   <button class="<%= Button %>">A blue button</button>
@@ -10,7 +12,8 @@ module Molecular
   # @param [Hash] atoms:
   #  - values are the CSS class names that get chained
   #  - keys define the API you'll use to apply alternate classes
-  def self.compound(atoms)
+  #  @return [Molecular::Compound]
+  def compound(atoms)
     Compound.new(atoms)
   end
 

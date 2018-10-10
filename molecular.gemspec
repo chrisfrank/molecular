@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Chris Frank"]
   spec.email         = ["chris.frank@future.com"]
 
-  spec.summary       = %q{Build reusable, tweakable UI elements out of atomic-CSS classes, in any Ruby app.}
+  spec.summary       = %q{Build reusable, tweakable UI elements out of atomic CSS classes, in any Ruby app.}
   spec.homepage      = "https://www.github.com/chrisfrank/molecular"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
