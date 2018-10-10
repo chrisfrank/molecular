@@ -2,17 +2,17 @@ require 'erb'
 require 'spec_helper'
 
 RSpec.describe Molecular do
-  it "has a version number" do
+  it 'has a version number' do
     expect(Molecular::VERSION).not_to be nil
   end
 
   it 'renders the default classes' do
-    ERB.new(%q{
+    ERB.new('
       <button class="<%= UI::Button %>">
         Click Me
       </button>
-    }).result(binding).tap do |res|
-      expect(res).to include "bg-blue"
+    ').result(binding).tap do |res|
+      expect(res).to include 'bg-blue'
     end
   end
 
@@ -22,8 +22,8 @@ RSpec.describe Molecular do
         Click Me
       </button>
     }).result(binding).tap do |res|
-      expect(res).not_to include "bg-blue"
-      expect(res).to include "bg-red"
+      expect(res).not_to include 'bg-blue'
+      expect(res).to include 'bg-red'
     end
   end
 
