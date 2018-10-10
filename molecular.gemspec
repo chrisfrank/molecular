@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Molecular::VERSION
   spec.authors       = ["Chris Frank"]
   spec.email         = ["chris.frank@future.com"]
+  spec.licenses      = ['MIT']
 
   spec.summary       = %q{Build reusable, tweakable UI elements out of atomic CSS classes, in any Ruby app.}
   spec.homepage      = "https://www.github.com/chrisfrank/molecular"
