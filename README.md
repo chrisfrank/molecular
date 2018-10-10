@@ -147,6 +147,10 @@ If you skipped straight to this section from the TOC, make sure to read the
 These examples use Molecular and [tachyons.css][button] to style a button in
 Rails, Sinatra, and Roda.
 
+* [Rails](#rails)
+* [Sinatra](#sinatra)
+* [Roda](#roda)
+
 ### Rails
 
 **Step 1:**
