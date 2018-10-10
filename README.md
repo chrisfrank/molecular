@@ -308,5 +308,5 @@ Bug reports and pull requests are welcome on GitHub at
 https://github.com/chrisfrank/molecular.
 
 [tachyons]: http://tachyons.io/
-[button]: http://tachyons.io/http://tachyons.io/components/buttons/basic/index.html
+[button]: http://tachyons.io/components/buttons/basic/index.html
 [tachyons-rails]: https://github.com/maggy96/tachyons-rails
